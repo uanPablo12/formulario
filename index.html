@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>REGISTRO DE MATERIAS</h1>
+    <h2>Rodríguez Sánchez Juan Pablo 5IV10 Ceación de portales web Jorge Pablo Sanchez Sánchez</h2>
+    <div class="formulario">
+    <form action="form.php" method="post">
+        <table>
+            <tr>
+                
+                <td><input type="text" placeholder="tu nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                
+                <td><input type="password" placeholder="tu contraseña" name="password" required></td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <input type="radio" name="genero"  value="F" required>FEMENINO
+                    <input type="radio" name="genero" value="M" required>MASCULINO
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <input type="email" placeholder="tu correo" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <select class="seleccion" name="materia" required>
+                        <option selected hodden value="">Materias</option>
+                        <option value="calculo">CALCULO</option>
+                        <option value="fisica">FISICA</option>
+                        <option value="programacion">PROGRAMACIÓN</option>
+                        <option value="database">BASE DE DATOS</option>
+                        <option value="analisis">ANALISIS DEL SISTEMA</option>
+                    </select>
+                    <input type="phone" placeholder="tu numero cel." name="telefono" required>
+                </td>   
+            </tr> 
+            
+            <tr>
+                <td>
+                    <input type="submit" value="ENVIAR" name="enviar">
+                </td>
+            </tr> 
+
+
+
+        </table>
+    </form>
+</div>
+</body>
+</html>
